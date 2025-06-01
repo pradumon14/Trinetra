@@ -1,0 +1,206 @@
+/**
+ * @file style.css
+ * @description Stylesheet for the Trinetra AI Web Guardian browser action popup.
+ * Implements a Google Material Design-inspired aesthetic.
+ *
+ * @author Pradumon Sahani
+ * @version 1.3
+ */
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    width: 360px; /* Slightly wider for better spacing */
+    margin: 0;
+    background-color: #f5f5f5; /* Light grey background, common in Google apps */
+    color: #202124; /* Google's primary dark text color */
+    font-size: 14px; /* Standard base font size */
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Consistent spacing */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header img {
+    width: 32px; /* Larger icon */
+    height: 32px;
+}
+
+.header h1 {
+    font-size: 20px; /* Google Sans-like size for titles */
+    font-weight: 500; /* Medium weight */
+    margin: 0;
+    color: #3c4043; /* Slightly lighter than primary text */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners, Material Design standard */
+    padding: 16px;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15); /* Google's standard shadow */
+}
+
+#scanResult #statusMessage {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: flex; /* Align icon and text */
+    align-items: center;
+}
+
+/* Status-specific styling */
+.status-icon {
+    margin-right: 8px;
+    font-size: 20px; /* Make icons slightly larger */
+}
+.status-safe { color: #34a853; /* Google Green */ }
+.status-suspicious { color: #fbbc05; /* Google Yellow */ }
+.status-dangerous { color: #ea4335; /* Google Red */ }
+.status-error { color: #5f6368; /* Google Grey for errors/neutral */ }
+.status-pending { color: #5f6368; }
+
+
+.explanation-text {
+    font-size: 13px;
+    color: #5f6368; /* Google's secondary text color */
+    line-height: 1.5;
+    max-height: 120px; /* Allow more space for explanation */
+    overflow-y: auto;
+    margin-bottom: 0;
+    word-wrap: break-word;
+}
+
+/* Scrollbar styling (optional, for a more polished look) */
+.explanation-text::-webkit-scrollbar {
+    width: 6px;
+}
+.explanation-text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+.explanation-text::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+.explanation-text::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+
+#actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 16px;
+}
+
+.button { /* Common button styling */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px; /* Standard Material button radius */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase; /* Material Design buttons are often uppercase */
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    outline: none;
+}
+.button:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.18);
+}
+.button:active {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+#goBackButton {
+    background-color: #ffffff;
+    color: #4285F4; /* Google Blue for text button */
+    border: 1px solid #dadce0; /* Light border for text buttons */
+}
+#goBackButton:hover {
+    background-color: rgba(66,133,244,0.04); /* Very light blue hover */
+    border-color: #c6c6c6;
+}
+
+#proceedAnywayButton {
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+}
+#proceedAnywayButton:hover {
+    background-color: #3367d6; /* Darker Google Blue */
+}
+
+.api-key-section h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #3c4043;
+}
+
+.api-note {
+    font-size: 12px;
+    color: #5f6368;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+#apiKeyInput {
+    width: calc(100% - 22px); /* Full width accounting for padding */
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #dadce0; /* Google input field border */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #202124;
+}
+#apiKeyInput:focus {
+    outline: none;
+    border-color: #4285F4; /* Google Blue focus ring */
+    box-shadow: 0 0 0 1px #4285F4;
+}
+
+.api-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end; /* Align buttons to right */
+}
+
+/* API buttons styled like the action buttons */
+#saveApiKeyButton {
+    background-color: #34a853; /* Google Green for save */
+    color: white;
+}
+#saveApiKeyButton:hover {
+    background-color: #2b8a44; /* Darker Green */
+}
+
+#clearApiKeyButton {
+    background-color: #ffffff;
+    color: #5f6368; /* Grey text */
+    border: 1px solid #dadce0;
+}
+#clearApiKeyButton:hover {
+    background-color: #f1f3f4; /* Light grey hover */
+}
+
+.api-message {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left; /* Align message to left under input */
+    padding-left: 2px;
+}
+.api-message.success { color: #1e8e3e; /* Darker Google Green for success text */ }
+.api-message.error { color: #d93025;   /* Darker Google Red for error text */ }

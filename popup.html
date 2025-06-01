@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trinetra: AI Web Guardian</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" alt="Trinetra Icon">
+            <h1>Trinetra</h1>
+        </div>
+
+        <div id="scanResult" class="card">
+            <p id="statusMessage"><span class="status-icon"></span>Loading status...</p>
+            <p id="explanation" class="explanation-text"></p>
+            <div id="actions" style="display: none;">
+                <button id="goBackButton" class="button">Go Back</button>
+                <button id="proceedAnywayButton" class="button">Proceed Anyway</button>
+            </div>
+        </div>
+
+        <div class="api-key-section card">
+            <h2>Gemini API Key</h2>
+            <p class="api-note">Enter your Google Gemini API Key to enable Trinetra's AI analysis. This key is stored locally on your device.</p>
+            <input type="password" id="apiKeyInput" placeholder="Your Gemini API Key">
+            <div class="api-buttons">
+                <button id="clearApiKeyButton" class="button">Clear Key</button>
+                <button id="saveApiKeyButton" class="button">Save Key</button>
+            </div>
+            <p id="apiKeyMessage" class="api-message"></p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
