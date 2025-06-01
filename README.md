@@ -44,13 +44,12 @@ The core mission of Trinetra is to protect users by:
 
 ### 2. Install Trinetra in Chrome
 
-1.  Download or clone the Trinetra project files into a dedicated folder on your computer.
-2.  Ensure you have an `icon.png` file (e.g., 128x128 pixels) in the root of this folder.
-3.  Open Google Chrome and navigate to `chrome://extensions`.
-4.  Enable **Developer mode** using the toggle switch (usually in the top-right corner).
-5.  Click the **Load unpacked** button.
-6.  Select the folder where you saved the Trinetra extension files.
-7.  "Trinetra: AI Web Guardian" should now appear in your list of extensions and its icon in your Chrome toolbar.
+1.  Download or clone the Trinetra project files into a dedicated folder on your computer. (the `Trinetra.zip` file)
+2.  Open Google Chrome and navigate to `chrome://extensions`.
+3.  Enable **Developer mode** using the toggle switch (usually in the top-right corner).
+4.  Click the **Load unpacked** button, or use **use .zip**.
+5.  Select the folder where you saved the Trinetra extension files. eg. `Trinetra.zip`
+6.  "Trinetra: AI Web Guardian" should now appear in your list of extensions and its icon in your Chrome toolbar.
 
 ### 3. Configure and Use Trinetra
 
