@@ -78,9 +78,12 @@ The core mission of Trinetra is to protect users by:
 *   **Performance Considerations**: Real-time page analysis involves data extraction and API communication, which may introduce minor latency on page loads, especially on slower connections or complex pages.
 *   **Data Privacy**: Trinetra sends page URLs and specific, truncated snippets of page content to the Google Gemini API using **your** provided API key. No data is sent to any other third-party server by the Trinetra extension itself. Please review Google's Gemini API data usage and privacy policies.
 *   **Experimental Software**: Trinetra is a sophisticated proof-of-concept developed by Pradumon Sahani. It should be considered experimental software. Use with discretion and understanding of its capabilities and limitations.
-## Sample screenshot 
-![Screenshot](Screenshot/screenshot.jpg)
----
-Trinetra aims to be a powerful ally in your digital safety. Developed by Pradumon Sahani. 
+## Screenshot
+Here’s what the extension looks like in work:
 
+<img src="Screenshot/screenshot.jpg" width="300"/>
+
+---
+
+Trinetra aims to be a powerful ally in your digital safety. Developed by Pradumon Sahani. 
 [view whitepaper](https://github.com/pradumon14/Trinetra/blob/main/Other/Whitepaper.pdf)
