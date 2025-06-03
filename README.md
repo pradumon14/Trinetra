@@ -80,4 +80,6 @@ The core mission of Trinetra is to protect users by:
 *   **Experimental Software**: Trinetra is a sophisticated proof-of-concept developed by Pradumon Sahani. It should be considered experimental software. Use with discretion and understanding of its capabilities and limitations.
 
 ---
-Trinetra aims to be a powerful ally in your digital safety. Developed by Pradumon Sahani.
+Trinetra aims to be a powerful ally in your digital safety. Developed by Pradumon Sahani. 
+
+[view whitepaper](https://github.com/pradumon14/Trinetra/blob/main/Other/Whitepaper.pdf)
